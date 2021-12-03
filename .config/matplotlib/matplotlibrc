@@ -148,7 +148,7 @@ markers.fillstyle: none # full|left|right|bottom|top|none
 # settings for axes and ticks. Special text sizes can be defined
 # relative to font.size, using the following values: xx-small, x-small,
 # small, medium, large, x-large, xx-large, larger, or smaller
-font.size           : 15.0
+font.size           : 20.0
 #font.serif          : Bitstream Vera Serif, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
 #font.sans-serif     : Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
 #font.cursive        : Apple Chancery, Textile, Zapf Chancery, Sand, Script MT, Felipa, cursive
@@ -287,7 +287,7 @@ xtick.minor.width    : 1.2    # minor tick width in points
 #xtick.major.pad      : 4      # distance to major tick label in points
 #xtick.minor.pad      : 4      # distance to the minor tick label in points
 #xtick.color          : k      # color of the tick labels
-xtick.labelsize      : 20 # fontsize of the tick labels
+xtick.labelsize      : 16 # fontsize of the tick labels
 xtick.direction      : in     # direction: in, out, or inout
 #xtick.minor.visible: True
 xtick.top : True
@@ -300,7 +300,7 @@ ytick.minor.width    : 1.2    # minor tick width in points
 #ytick.major.pad      : 4      # distance to major tick label in points
 #ytick.minor.pad      : 4      # distance to the minor tick label in points
 #ytick.color          : k      # color of the tick labels
-ytick.labelsize      : 20 # fontsize of the tick labels
+ytick.labelsize      : 16 # fontsize of the tick labels
 ytick.direction      : in     # direction: in, out, or inout
 #ytick.minor.visible: True
 
@@ -335,7 +335,7 @@ legend.frameon       : False   # whether or not to draw a frame around legend
 # See http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
 figure.titlesize : 20     # size of the figure title
 #figure.titleweight : normal   # weight of the figure title
-figure.figsize   : 8, 6    # figure size in inches
+figure.figsize   : 7, 5    # figure size in inches
 #figure.dpi       : 80      # figure dots per inch
 #figure.facecolor : 0.75    # figure facecolor; 0.75 is scalar gray
 #figure.edgecolor : white   # figure edgecolor
