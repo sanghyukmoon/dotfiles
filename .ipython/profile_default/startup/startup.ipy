@@ -1,0 +1,33 @@
+%load_ext autoreload
+%autoreload 2
+
+# python libraries
+import sys, os
+from pathlib import Path
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.colors import LogNorm, SymLogNorm
+from mpl_toolkits.axes_grid1 import make_axes_locatable, ImageGrid
+from matplotlib import gridspec
+import numpy as np
+from scipy.integrate import quad
+import pandas as pd
+import xarray as xr
+import pickle
+from astropy import units as au
+from astropy import constants as ac
+
+# personal libraries
+import pyathena as pa
+from pygc.sfr_theory import *
+from pygc.util import *
+from pygc.ring import *
+from pygc.pot import *
+from pygc.starpar import *
+from pygc.cooling import *
+from pygc import mplt
+
+# global constants
+u = pa.util.units.Units()
+mstar = 95.5
+Twarm = 2.e4
