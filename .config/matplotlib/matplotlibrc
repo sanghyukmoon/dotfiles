@@ -15,6 +15,7 @@ mathtext.sf:  sans
 mathtext.tt:  monospace
 mathtext.fallback: cm
 mathtext.default: it
+mathtext.fontset: dejavuserif
 
 axes.linewidth:     1.2
 axes.titlesize:     20
