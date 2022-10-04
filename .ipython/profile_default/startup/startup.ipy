@@ -26,7 +26,7 @@ from pygc.pot import *
 from pygc.starpar import *
 from pygc.cooling import *
 from pygc import mplt
-from athena_read import vtk
+from athena_read import athdf, vtk
 
 # global constants
 u = pa.util.units.Units()
