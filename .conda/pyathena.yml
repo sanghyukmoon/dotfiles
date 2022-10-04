@@ -15,3 +15,4 @@ dependencies:
   - periodictable
   - jupyter
   - netCDF4
+  - h5py

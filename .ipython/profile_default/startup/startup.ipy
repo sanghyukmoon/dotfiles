@@ -16,6 +16,7 @@ import xarray as xr
 import pickle
 from astropy import units as au
 from astropy import constants as ac
+import h5py
 
 # personal libraries
 import pyathena as pa
