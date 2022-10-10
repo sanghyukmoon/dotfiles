@@ -45,6 +45,7 @@ legend.fontsize:      20
 
 figure.titlesize:   20
 figure.figsize:     7, 5
+figure.dpi:         200
 
 errorbar.capsize: 3
 
