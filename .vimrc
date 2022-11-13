@@ -21,8 +21,14 @@ call plug#end()
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'skim'
 
+" [nerdtree]
+nmap <C-o> :NERDTreeToggle<CR>
+
+" [tagbar]
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
-
-nmap <C-o> :NERDTreeToggle<CR>
 nmap <C-l> :TagbarToggle<CR>
+
+" [cscope]
+cs add cscope.out
+nmap r<C-]> :cs find c <C-R>=expand("<cword>")<CR><CR>
