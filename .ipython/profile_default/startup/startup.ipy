@@ -17,4 +17,4 @@ import subprocess
 import xarray as xr
 
 # personal libraries
-from pyathenapp.loadsim import LoadSim
+from pyglet.loadsim import LoadSim
