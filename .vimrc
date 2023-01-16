@@ -31,6 +31,7 @@ nmap <C-l> :TagbarToggle<CR>
 
 " [cscope]
 cs add cscope.out
-nmap r<C-]> :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap c<C-]> :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap r<C-]> :cs find s <C-R>=expand("<cword>")<CR><CR>
 
 filetype plugin on
