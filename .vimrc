@@ -15,6 +15,8 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'Konfekt/FastFold'
+Plug 'tmhedberg/SimpylFold'
 call plug#end()
 
 " [vimtex]
