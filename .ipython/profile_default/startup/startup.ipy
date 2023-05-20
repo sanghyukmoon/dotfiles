@@ -11,6 +11,7 @@ from matplotlib.colors import LogNorm, SymLogNorm
 from matplotlib.ticker import FixedLocator, FixedFormatter
 from matplotlib.markers import MarkerStyle
 import numpy as np
+from scipy.stats import linregress
 from pathlib import Path
 import pickle
 import re
