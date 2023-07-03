@@ -10,6 +10,7 @@ from matplotlib import gridspec
 from matplotlib.colors import LogNorm, SymLogNorm
 from matplotlib.ticker import FixedLocator, FixedFormatter
 from matplotlib.markers import MarkerStyle
+import cmasher
 import numpy as np
 from scipy.stats import linregress
 from pathlib import Path

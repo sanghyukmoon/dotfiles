@@ -15,12 +15,11 @@ mathtext.sf:  sans
 mathtext.tt:  monospace
 mathtext.fallback: cm
 mathtext.default: it
-mathtext.fontset: dejavuserif
+mathtext.fontset: cm
 
 axes.linewidth:     1.2
 axes.titlesize:     20
 axes.labelsize:     20
-axes.prop_cycle: cycler('color', 'kbgrcmy')
 
 xtick.top:           True
 xtick.major.size:    7
