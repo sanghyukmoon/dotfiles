@@ -6,13 +6,15 @@ from astropy import units as au
 from astropy import constants as ac
 import h5py
 import matplotlib.pyplot as plt
-from matplotlib import gridspec
+from matplotlib.gridspec import GridSpec
 from matplotlib.colors import LogNorm, SymLogNorm
 from matplotlib.ticker import FixedLocator, FixedFormatter
 from matplotlib.markers import MarkerStyle
 import cmasher
 import numpy as np
 from scipy.stats import linregress
+from scipy.interpolate import interp1d
+from scipy.optimize import brentq
 from pathlib import Path
 import pickle
 import re
