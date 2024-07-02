@@ -43,7 +43,7 @@ legend.frameon:       False
 legend.fontsize:      20
 
 figure.titlesize:   20
-figure.figsize:     7, 5
+figure.figsize:     6, 4.3
 
 errorbar.capsize: 3
 
