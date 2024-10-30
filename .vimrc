@@ -9,6 +9,7 @@ set number
 
 " vim-plug
 call plug#begin()
+Plug 'github/copilot.vim'
 Plug 'lervag/vimtex'
 Plug 'preservim/nerdtree'
 Plug 'majutsushi/tagbar'
