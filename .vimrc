@@ -9,6 +9,7 @@ set number
 
 " vim-plug
 call plug#begin()
+Plug 'dpelle/vim-LanguageTool'
 Plug 'github/copilot.vim'
 Plug 'lervag/vimtex'
 Plug 'preservim/nerdtree'
@@ -36,5 +37,9 @@ nmap <C-l> :TagbarToggle<CR>
 cs add cscope.out
 nmap c<C-]> :cs find c <C-R>=expand("<cword>")<CR><CR>
 nmap r<C-]> :cs find s <C-R>=expand("<cword>")<CR><CR>
+
+
+" [LanguageTool]
+let g:languagetool_jar = '/Users/smoon/LanguageTool-5.9/languagetool-commandline.jar'
 
 filetype plugin on
