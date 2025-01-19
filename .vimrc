@@ -43,3 +43,4 @@ nmap r<C-]> :cs find s <C-R>=expand("<cword>")<CR><CR>
 let g:languagetool_jar = '/Users/smoon/LanguageTool-5.9/languagetool-commandline.jar'
 
 filetype plugin on
+autocmd FileType tex let b:copilot_enabled = 0
