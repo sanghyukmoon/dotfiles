@@ -1,10 +1,12 @@
 %load_ext autoreload
 %autoreload 2
 
-import socket
-hostname = socket.gethostname()
+import os
+conda_env =  os.getenv("CONDA_DEFAULT_ENV")
 
-if "stellar" in hostname or "tiger" in hostname:
+if conda_env=="base":
+  import numpy as np
+elif conda_env=="pyathena":
   # python libraries
   import numpy as np
   import xarray as xr
@@ -32,4 +34,4 @@ if "stellar" in hostname or "tiger" in hostname:
   
   # personal libraries
 else:
-  import numpy as np
+  pass
