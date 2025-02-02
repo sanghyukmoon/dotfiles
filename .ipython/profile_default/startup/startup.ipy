@@ -1,26 +1,35 @@
 %load_ext autoreload
 %autoreload 2
 
-# python libraries
-from astropy import units as au
-from astropy import constants as ac
-import h5py
-import matplotlib.pyplot as plt
-from matplotlib.gridspec import GridSpec
-from matplotlib.colors import LogNorm, SymLogNorm
-from matplotlib.ticker import FixedLocator, FixedFormatter
-from matplotlib.markers import MarkerStyle
-import cmasher
-import numpy as np
-from scipy.stats import linregress
-from scipy.interpolate import interp1d
-from scipy.optimize import brentq
-from pathlib import Path
-import pickle
-import re
-import subprocess
-import xarray as xr
-import pandas as pd
-import yt
+import socket
+hostname = socket.gethostname()
 
-# personal libraries
+if "stellar" in hostname or "tiger" in hostname:
+  # python libraries
+  import numpy as np
+  import xarray as xr
+  import pandas as pd
+
+  from scipy.stats import linregress
+  from scipy.interpolate import interp1d
+  from scipy.optimize import brentq
+
+  from astropy import units as au
+  from astropy import constants as ac
+
+  import matplotlib.pyplot as plt
+  from matplotlib.gridspec import GridSpec
+  from matplotlib.colors import Normalize, LogNorm, SymLogNorm
+  from matplotlib.ticker import FixedLocator, FixedFormatter
+  from matplotlib.markers import MarkerStyle
+  import cmasher
+
+  import h5py
+  from pathlib import Path
+  import pickle
+  import re
+  import subprocess
+  
+  # personal libraries
+else:
+  import numpy as np
