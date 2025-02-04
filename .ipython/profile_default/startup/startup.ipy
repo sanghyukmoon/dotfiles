@@ -6,6 +6,8 @@ conda_env =  os.getenv("CONDA_DEFAULT_ENV")
 
 if conda_env=="base":
   import numpy as np
+  from astropy import units as au
+  from astropy import constants as ac
 elif conda_env=="pyathena":
   # python libraries
   import numpy as np
