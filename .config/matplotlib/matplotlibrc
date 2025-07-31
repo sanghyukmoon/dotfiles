@@ -3,7 +3,7 @@ interactive: False
 
 lines.linewidth: 2.0
 
-markers.fillstyle: none
+markers.fillstyle: full
 
 font.size:    20.0
 
