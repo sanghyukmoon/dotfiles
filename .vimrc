@@ -36,8 +36,8 @@ nmap <C-l> :TagbarToggle<CR>
 " [cscope]
 cs add cscope.out
 nmap c<C-]> :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap r<C-]> :cs find s <C-R>=expand("<cword>")<CR><CR>
-
+nmap s<C-]> :cs find s <C-R>=expand("<cword>")<CR><CR>
+map <F5> :!ctags -R src<CR>:!cscope -Rb<CR>:cs reset<CR><CR>
 
 " [LanguageTool]
 let g:languagetool_jar = '/Users/smoon/LanguageTool-5.9/languagetool-commandline.jar'
