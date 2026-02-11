@@ -27,8 +27,8 @@ elif conda_env=="pyathena":
   import matplotlib.pyplot as plt
   from matplotlib.gridspec import GridSpec
   from matplotlib.colors import Normalize, LogNorm, SymLogNorm
-  from matplotlib.ticker import FixedLocator, FixedFormatter
   from matplotlib.markers import MarkerStyle
+  from matplotlib import ticker
   import cmasher
 
   import h5py
