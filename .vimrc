@@ -9,7 +9,6 @@ set number
 
 " vim-plug
 call plug#begin()
-Plug 'dpelle/vim-LanguageTool'
 Plug 'github/copilot.vim'
 Plug 'lervag/vimtex'
 Plug 'preservim/nerdtree'
@@ -38,9 +37,6 @@ cs add cscope.out
 nmap c<C-]> :cs find c <C-R>=expand("<cword>")<CR><CR>
 nmap s<C-]> :cs find s <C-R>=expand("<cword>")<CR><CR>
 map <F5> :!ctags -R src<CR>:!cscope -Rb<CR>:cs reset<CR><CR>
-
-" [LanguageTool]
-let g:languagetool_jar = '/Users/smoon/LanguageTool-5.9/languagetool-commandline.jar'
 
 filetype plugin on
 autocmd FileType tex let b:copilot_enabled = 0
