@@ -1,0 +1,6 @@
+[submodule ".vim/pack/smoon/start/vim-lsp"]
+	path = .vim/pack/smoon/start/vim-lsp
+	url = git@github.com:prabirshrestha/vim-lsp.git
+[submodule ".vim/pack/smoon/start/copilot.vim"]
+	path = .vim/pack/smoon/start/copilot.vim
+	url = git@github.com:github/copilot.vim.git
