@@ -1,7 +1,7 @@
 # dotfiles
 
 This repository contains configuration files managed by [YADM](https://yadm.io) dotfile manager.
-To version control Vim plugins managed by built-in packages feature, they are added as [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules), where `$HOME` serves as a superproject.
+To version control Vim plugins managed by built-in packages feature, they are added as [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules), where `$HOME` serves as a superproject (see also https://yadm.io/docs/bootstrap#).
 New plugin should be installed by, e.g.,
 ```bash
 > yadm submodule add git@github.com:github/copilot.vim.git .vim/pack/smoon/start/copilot.vim
