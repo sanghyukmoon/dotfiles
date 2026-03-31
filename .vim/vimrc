@@ -37,6 +37,7 @@ let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 " let g:netrw_banner = 0  " Disable the banner at the top of netrw
 " Disable document highlight, which is enabled by default in vim-lsp
 let g:lsp_document_highlight_enabled = 0
+let g:lsp_diagnostics_enabled = 0
 
 
 " LSP
@@ -61,7 +62,7 @@ endif
 
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
-    setlocal signcolumn=yes
+"    setlocal signcolumn=yes
     if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
     nmap <buffer> gd <plug>(lsp-definition)
     nmap <buffer> gs <plug>(lsp-document-symbol-search)
