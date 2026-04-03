@@ -20,6 +20,7 @@ set expandtab
 set hlsearch
 set incsearch
 set number
+set colorcolumn=80
 
 
 " Keymaps
@@ -41,6 +42,24 @@ let g:lsp_document_highlight_enabled = 0
 let g:lsp_diagnostics_enabled = 0
 let g:lsp_signature_help_enabled = 0
 
+" vista.vim settings
+let g:vista_executive_for = {
+  \ 'cpp': 'vim_lsp',
+  \ 'python': 'vim_lsp',
+  \ }
+
+" Python indent settings
+" :set indentexpr? to see the default value of indentexpr for python.
+" The default indentexpr for python is defined in
+" $VIMRUNTIME/indent/python.vim and $VIMRUNTIME/autoload/python.vim
+" which sets open_paren: 'shiftwidth()*2' and closed_paren_align_last_line:
+" v:true. However, this is not in line with PEP8 which recommends 4 spaces for
+" indentation. Therefore, I set open_paren to 'shiftwidth()' and
+" closed_paren_align_last_line to v:false.
+let g:python_indent = #{
+  \ open_paren: 'shiftwidth()',
+  \ closed_paren_align_last_line: v:false,
+  \ }
 
 " LSP
 " ----------------------------------------------------------------------------
