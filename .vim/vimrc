@@ -28,6 +28,7 @@ set number
 " Type :help map-comments for more details.
 nnoremap <leader>o :Explore<CR>  |" Open netrw file explorer
 nnoremap <leader><leader> <C-^>  |" Go to the previous buffer
+nnoremap <leader>l :Vista!!<CR>  |" Toggle vista view window
 
 
 " Options

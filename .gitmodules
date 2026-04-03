@@ -4,3 +4,6 @@
 [submodule ".vim/pack/smoon/start/copilot.vim"]
 	path = .vim/pack/smoon/start/copilot.vim
 	url = git@github.com:github/copilot.vim.git
+[submodule ".vim/pack/smoon/start/vista.vim"]
+	path = .vim/pack/smoon/start/vista.vim
+	url = git@github.com:liuchengxu/vista.vim.git
