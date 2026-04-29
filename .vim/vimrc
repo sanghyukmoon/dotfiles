@@ -107,3 +107,9 @@ augroup lsp_install
     " registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+
+" Close quickfix window opened by lsp-references after jumping to the location
+augroup close_qf_after_jump
+  autocmd!
+  autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
+augroup END
