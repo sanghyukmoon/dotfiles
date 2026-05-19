@@ -7,3 +7,6 @@
 [submodule ".vim/pack/smoon/start/vista.vim"]
 	path = .vim/pack/smoon/start/vista.vim
 	url = git@github.com:liuchengxu/vista.vim.git
+[submodule ".vim/pack/smoon/start/vimtex.vim"]
+	path = .vim/pack/smoon/start/vimtex.vim
+	url = https://github.com/lervag/vimtex
