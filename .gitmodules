@@ -10,3 +10,9 @@
 [submodule ".vim/pack/smoon/start/vimtex.vim"]
 	path = .vim/pack/smoon/start/vimtex.vim
 	url = https://github.com/lervag/vimtex
+[submodule ".vim/pack/smoon/start/ultisnips"]
+	path = .vim/pack/smoon/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule ".vim/pack/smoon/start/vim-snippets"]
+	path = .vim/pack/smoon/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
