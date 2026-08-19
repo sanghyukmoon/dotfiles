@@ -61,6 +61,17 @@ let g:python_indent = #{
   \ closed_paren_align_last_line: v:false,
   \ }
 
+" vimtex settings
+" Disable copilot for latex file
+let g:copilot_filetypes = {
+  \ 'tex': v:false,
+  \ }
+let g:vimtex_compiler_method = 'latexmk'
+let g:vimtex_view_method = 'skim'
+if empty(v:servername) && exists('*remote_startserver')
+  call remote_startserver('VIM')
+endif
+
 " LSP
 " ----------------------------------------------------------------------------
 " prabirshrestha/vim-lsp settings
