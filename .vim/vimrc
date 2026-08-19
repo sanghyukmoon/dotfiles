@@ -8,6 +8,9 @@ if &compatible
 endif
 let mapleader = " "
 
+" Load only native UltiSnips definitions, not legacy snipMate snippets.
+let g:UltiSnipsEnableSnipMate = 0
+
 
 " Basic configurations
 " ----------------------------------------------------------------------------

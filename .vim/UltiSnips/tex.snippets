@@ -1,0 +1,25 @@
+# Personal TeX snippets layered over vim-snippets/UltiSnips/tex.snippets.
+# These math-font triggers come from the legacy snippets/tex.snippets file,
+# expressed in native UltiSnips syntax. Personal definitions win over bundled
+# definitions while upstream snippet submodules remain clean and updateable.
+priority 100
+
+snippet mr "mathrm (in-word)" i
+\mathrm{${1:${VISUAL:text}}}${0}
+endsnippet
+
+snippet mb "mathbf (in-word)" i
+\mathbf{${1:${VISUAL:text}}}${0}
+endsnippet
+
+snippet mf "mathfrak" w
+\mathfrak{${1:${VISUAL:text}}}${0}
+endsnippet
+
+snippet mc "mathcal" w
+\mathcal{${1:${VISUAL:text}}}${0}
+endsnippet
+
+snippet ms "mathscr" w
+\mathscr{${1:${VISUAL:text}}}${0}
+endsnippet
