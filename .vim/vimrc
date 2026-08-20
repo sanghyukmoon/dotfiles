@@ -8,8 +8,9 @@ if &compatible
 endif
 let mapleader = " "
 
-" Load only native UltiSnips definitions, not legacy snipMate snippets.
-let g:UltiSnipsEnableSnipMate = 0
+" Load vim-snippets' legacy TeX collection alongside native overrides.
+" Personal definitions in ~/.vim/UltiSnips have higher priority.
+let g:UltiSnipsEnableSnipMate = 1
 
 
 " Basic configurations
