@@ -72,7 +72,7 @@ let g:copilot_filetypes = {
   \ }
 let g:vimtex_compiler_method = 'latexmk'
 let g:vimtex_view_method = 'skim'
-if has('clientserver') && empty(v:servername) && exists('*remote_startserver')
+if has('mac') && empty(v:servername) && exists('*remote_startserver')
   call remote_startserver('VIM')
 endif
 
