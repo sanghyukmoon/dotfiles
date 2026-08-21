@@ -128,3 +128,5 @@ augroup close_qf_after_jump
   autocmd!
   autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
 augroup END
+
+packadd comment
