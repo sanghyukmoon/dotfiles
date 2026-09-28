@@ -24,8 +24,13 @@ set expandtab
 set hlsearch
 set incsearch
 set number
-set colorcolumn=80
 
+augroup filetype_colorcolumn
+  autocmd!
+  autocmd FileType *      setlocal colorcolumn=
+  autocmd FileType python setlocal colorcolumn=80
+  autocmd FileType cpp    setlocal colorcolumn=91
+augroup END
 
 " Keymaps
 " ----------------------------------------------------------------------------
@@ -45,6 +50,7 @@ let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 let g:lsp_document_highlight_enabled = 0
 let g:lsp_diagnostics_enabled = 0
 let g:lsp_signature_help_enabled = 0
+let g:lsp_document_code_action_signs_enabled = 0
 
 " vista.vim settings
 let g:vista_executive_for = {
@@ -69,6 +75,7 @@ let g:python_indent = #{
 " Disable copilot for latex file
 let g:copilot_filetypes = {
   \ 'tex': v:false,
+  \ 'markdown': v:false,
   \ }
 let g:vimtex_compiler_method = 'latexmk'
 let g:vimtex_view_method = 'skim'
