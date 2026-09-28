@@ -52,3 +52,12 @@ endsnippet
 snippet rv "right vertical" w
 \rvert
 endsnippet
+
+snippet fig "aastex figure" bi
+\begin{figure}[${1:htpb}]
+	\epsscale{1.18}
+	\plotone{$2}
+	\caption{$3}
+	\label{fig:${4:${2/\.[^.\/]+$//}}}
+\end{figure}
+endsnippet
