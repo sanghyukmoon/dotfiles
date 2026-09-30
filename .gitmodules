@@ -16,3 +16,6 @@
 [submodule ".vim/pack/smoon/start/vim-snippets"]
 	path = .vim/pack/smoon/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule ".vim/pack/smoon/opt/vim-solarized8"]
+	path = .vim/pack/smoon/opt/vim-solarized8
+	url = https://codeberg.org/lifepillar/vim-solarized8.git

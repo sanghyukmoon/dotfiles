@@ -17,6 +17,9 @@ let g:UltiSnipsEnableSnipMate = 1
 " ----------------------------------------------------------------------------
 syntax enable
 filetype plugin indent on
+set termguicolors
+set background=light
+colorscheme solarized8
 set pastetoggle=<F2>
 set tabstop=2
 set shiftwidth=2
