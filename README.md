@@ -15,8 +15,9 @@ In Vim packages system, user has a responsibility for generating helptags. Easie
    git clone https://github.com/vim/vim.git
    cd vim
    git pull
+   cd src
    ```
-   Open Makefile, search for `prefix`, and set it to $(HOME)/.local; Also, enable python3 support.
+   Open Makefile, search for `prefix`, and set it to $(HOME)/.local; Also, enable python3 support by searching --enable-python3interp and uncomment the line
    ```
    make
    make install
