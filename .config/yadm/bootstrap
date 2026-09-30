@@ -1,0 +1,2 @@
+cd "$HOME"
+yadm submodule update --init --recursive
