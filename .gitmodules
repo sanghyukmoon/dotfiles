@@ -19,3 +19,6 @@
 [submodule ".vim/pack/smoon/opt/vim-solarized8"]
 	path = .vim/pack/smoon/opt/vim-solarized8
 	url = https://codeberg.org/lifepillar/vim-solarized8.git
+[submodule "/home/sm69/.vim/pack/smoon/start/vim-tmux-navigator"]
+	path = /home/sm69/.vim/pack/smoon/start/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
