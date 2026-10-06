@@ -142,7 +142,6 @@ augroup END
 packadd comment
 augroup load_tex_plugins
   autocmd!
-  autocmd FileType tex packadd vimtex.vim
   autocmd FileType tex packadd ultisnips
   autocmd FileType tex packadd vim-snippets
 augroup END
