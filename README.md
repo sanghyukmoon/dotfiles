@@ -22,11 +22,12 @@ In Vim packages system, user has a responsibility for generating helptags. Easie
    make
    make install
    ```
-2. Install yadm
+2. Create a ssh-key and add it to github (required for the yadm part, because we check out from private repo)
+3. Install yadm
    ```
    curl -fLo $HOME/.local/bin/yadm https://github.com/yadm-dev/yadm/raw/master/yadm && chmod a+x $HOME/.local/bin/yadm
    yadm clone https://github.com/sanghyukmoon/dotfiles.git
    ```
-3. Create ssh key and add public key to github
-4. Install vim packages
+4. Create ssh key and add public key to github
+5. Install vim packages
    ```yadm submodule update --recursive --init```
