@@ -5,17 +5,11 @@ lines.linewidth: 2.0
 
 markers.fillstyle: full
 
+text.usetex : true
 font.size:    20.0
 
-mathtext.bf:  serif:bold
-mathtext.cal: cursive
-mathtext.it:  serif:italic
-mathtext.rm:  serif
-mathtext.sf:  sans
-mathtext.tt:  monospace
-mathtext.fallback: cm
-mathtext.default: it
-mathtext.fontset: cm
+font.family : serif
+font.serif  : Computer Modern Roman
 
 axes.linewidth:     1.2
 axes.titlesize:     20
