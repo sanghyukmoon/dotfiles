@@ -6,6 +6,7 @@ lines.linewidth: 2.0
 markers.fillstyle: full
 
 text.usetex : true
+text.latex.preamble : \usepackage{amsmath}
 font.size:    20.0
 
 font.family : serif
