@@ -18,7 +18,7 @@ alias ll='ls -l --color=auto'
 alias s='ssh'
 alias gc='cd "$HOME/pyathena_extensions/core_formation"'
 alias gp='cd "$HOME/pyathena"'
-alias sq='squeue -u "$USER" -o "%.10i %.9P %.30j %.4u %.2t %.8M %.5D %R"'
+alias sq='squeue -u "$USER" -o "%.10i %.9P %.15j %.4u %.2t %.8M %.19S %.5D %R"'
 alias si='sinfo -s'
 alias nb='jupyter lab --no-browser --port=20201 --ip=0.0.0.0'
 alias tl='tmux list-sessions'
@@ -58,12 +58,12 @@ vim_pack_update() (
 
 sa() {
     sacct --units=G --noheader --parsable2 \
-        --format=JobID,JobName,State,Elapsed,NNodes,MaxRSS,TRESUsageInMax \
+        --format=JobID,JobName,State,Elapsed,NNodes,MaxRSS,TRESUsageInMax,NodeList \
         "$@" |
     awk -F'|' '
     BEGIN {
-        printf "%-18s %-14s %-12s %-12s %6s %10s %10s\n",
-               "JobID", "JobName", "State", "Elapsed", "Nodes", "HostMem", "GPUMem"
+        printf "%-15s %-15s %-10s %-10s %5s %7s %7s %7s\n",
+               "JobID", "JobName", "State", "Elapsed", "Nodes", "HostMem", "GPUMem", "NodeList"
     }
     {
         job = $1
@@ -85,9 +85,9 @@ sa() {
             }
         }
 
-        printf "%-18s %-14s %-12s %-12s %6s %10s %10s\n",
+        printf "%-15s %-15s %-10s %-10s %5s %7s %7s %7s\n",
                $1, name, $3, $4, ($5 == "" ? "-" : $5),
-               ($6 == "" ? "-" : $6), gpu
+               ($6 == "" ? "-" : $6), gpu, $8
     }'
 }
 
