@@ -20,10 +20,6 @@ alias w='cd /appsdata/t625a01'
 
 unset LESS
 
-export PATH="/home01/t625a01/texlive/2026/bin/aarch64-linux:$PATH"
-export MANPATH="/home01/t625a01/texlive/2026/texmf-dist/doc/man:$MANPATH"
-export INFOPATH="/home01/t625a01/texlive/2026/texmf-dist/doc/info:$INFOPATH"
-
 pyathena() {
     module load miniforge/26.1.1-3 || return
     unset CONDARC
