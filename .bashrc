@@ -29,9 +29,6 @@ alias gdc='git diff --compact-summary'
 alias rsync='rsync --archive --progress --partial-dir=.rsync-partial'
 
 export PATH="$HOME/scripts:$PATH"
-export PATH="$HOME/texlive/2026/bin/aarch64-linux:$PATH"
-export MANPATH="$HOME/texlive/2026/texmf-dist/doc/man:$MANPATH"
-export INFOPATH="$HOME/texlive/2026/texmf-dist/doc/info:$INFOPATH"
 export PYTHONPATH="$HOME/pyathena:$PYTHONPATH"
 export PYTHONPATH="$HOME/pyathena_extensions:$PYTHONPATH"
 export PYTHONPATH="$HOME/grid_dendro:$PYTHONPATH"
