@@ -17,6 +17,7 @@ unset XTERM_VERSION
 
 # User specific aliases and functions
 alias w='cd /appsdata/t625a01'
+alias sk='cd /scratch/t625a01'
 
 unset LESS
 

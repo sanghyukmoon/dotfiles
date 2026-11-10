@@ -144,7 +144,7 @@ case "$(hostname -s)" in
     della*)
         source "$HOME/.config/bash/della.sh"
         ;;
-    glogin*)
+    hangang*|glogin*|node[0-9][0-9][0-9][0-9]|cnode[0-9][0-9][0-9][0-9])
         source "$HOME/.config/bash/hangang.sh"
         ;;
 esac
