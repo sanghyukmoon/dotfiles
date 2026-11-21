@@ -141,8 +141,11 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 case "$(hostname -s)" in
-    stellar*)
+    stellar-vis1|stellar-intel)
         source "$HOME/.config/bash/stellar.sh"
+        ;;
+    stellarai-vis1)
+        source "$HOME/.config/bash/stellarai.sh"
         ;;
     della*)
         source "$HOME/.config/bash/della.sh"
