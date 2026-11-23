@@ -1,6 +1,6 @@
 # Scientific writing
 
-- When a troubled cell switches reconstruction order, say it “falls back to lower-order reconstruction.” Use “flux correction” when the algorithm replaces a face flux. Describe repeated corrections as “each flux correction” or “the final flux correction.” Avoid “demotion,” “pass,” and “revision” for these operations.
+- Use “bad cell” for a cell that fails the fallback checks. When a bad cell switches reconstruction order, say it “falls back to lower-order reconstruction.” Use “flux correction” when the algorithm replaces a face flux. Describe repeated corrections as “each flux correction” or “the final flux correction.” Avoid “demotion,” “pass,” and “revision” for these operations.
 - Name the reconstruction a cell uses. For example, write “cells already using piecewise constant reconstruction.” Avoid “bottom-tier cells.”
 - Explain how a flux correction affects neighboring cells. For example, “Correcting the flux at a shared face changes the update in both cells and can cause the neighboring cell to fail the check.”
 - For mesh boundaries, use “ghost cells.” When the width matters, specify the number of ghost-cell layers. Avoid “halo” in this context.
