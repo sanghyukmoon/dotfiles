@@ -29,6 +29,10 @@ alias tn='tmux -CC new -A -s main'
 alias ta='tmux -CC attach -t main'
 alias gd='git diff'
 alias gdc='git diff --compact-summary'
+alias yd='yadm diff'
+alias ys='yadm status'
+alias yps='yadm push'
+alias ypl='yadm pull'
 alias rsync='rsync --archive --progress --partial-dir=.rsync-partial'
 
 export PATH="$HOME/scripts:$PATH"
