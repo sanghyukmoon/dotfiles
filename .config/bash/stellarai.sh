@@ -1,6 +1,4 @@
-alias w='cd /scratch/gpfs/sm69/'
-alias wc='cd /scratch/gpfs/sm69/cores/mhd'
-alias k='cd /scratch/gpfs/sm69/cores/athenak'
+alias w='cd /scratch/gpfs/EOST/sanghyuk'
 alias tg='cd /tigress/sm69'
 alias td='cd /tigerdata/EOSTRIKE'
 alias pj='cd /projects2/EOSTRIKE/sanghyuk'
